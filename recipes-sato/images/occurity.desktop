@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Occurity
+Comment=Run Occurity
+Exec=/home/root/occurity/Occurity
+Terminal=true
+Type=Application
+StartupNotify=true

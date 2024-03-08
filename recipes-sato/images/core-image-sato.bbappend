@@ -9,9 +9,4 @@ do_matchbox_adjust() {
   cp ${SAVED_DIR}/occurity.desktop ${IMAGE_ROOTFS}/etc/xdg/autostart/
 }
 
-do_occurity_install() {
-  cp -a ${SAVED_DIR}/occurity ${IMAGE_ROOTFS}/home/root/
-  chmod +x ${IMAGE_ROOTFS}/home/root/occurity/Occurity
-}
-
-IMAGE_PREPROCESS_COMMAND += "do_matchbox_adjust do_occurity_install"
+IMAGE_PREPROCESS_COMMAND += "do_matchbox_adjust"

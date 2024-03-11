@@ -15,6 +15,7 @@ do_install:append() {
   # Install the application
   install -d ${D}/home/root/occurity/
   install -m 0755 Occurity ${D}/home/root/occurity/
+  install -m 0664 charts.xml.example ${D}/home/root/occurity/
 }
 
 FILES:${PN} += "/home/root/occurity/"

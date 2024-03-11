@@ -26,6 +26,7 @@ do_install:append() {
   cp -R ${S}/flirc_configs ${D}/home/root/occurity/
   cp -R ${S}/scripts ${D}/home/root/occurity/
   cp -R ${S}/jobs ${D}/home/root/occurity/
+  cp -R ${S}/svg ${D}/home/root/occurity/
   cp -R ${S}/videos ${D}/home/root/occurity/
 }
 

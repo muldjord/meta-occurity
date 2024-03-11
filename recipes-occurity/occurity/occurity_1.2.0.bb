@@ -21,6 +21,7 @@ do_install:append() {
   install -m 0664 ${S}/LICENSE ${D}/home/root/occurity/
   install -m 0664 ${S}/occurity_da_DK.qm ${D}/home/root/occurity/
   install -m 0664 ${S}/README.md ${D}/home/root/occurity/
+  install -m 0664 ${S}/VERSION ${D}/home/root/occurity/
   cp -R ${S}/optotypes ${D}/home/root/occurity/
   cp -R ${S}/docs ${D}/home/root/occurity/
   cp -R ${S}/flirc_configs ${D}/home/root/occurity/

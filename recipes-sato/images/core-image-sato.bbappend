@@ -1,6 +1,8 @@
-SUMMARY = "Installs Occurity and adjusts Matchbox configuration"
-DESCRIPTION = "Copies Occurity application files into rootfs, adjusts the Matchbox configuration and set Occurity to autostart"
+SUMMARY = "Adjusts Matchbox configuration and adds Occurity package"
+DESCRIPTION = "Adjusts the Sato and Matchbox configuration, set Occurity to autostart and adds the Occurity package"
 LICENSE = "MIT"
+
+IMAGE_INSTALL:append = " occurity nano"
 
 SAVED_DIR := "${THISDIR}"
 

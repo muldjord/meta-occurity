@@ -4,8 +4,8 @@ LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec6d293b95dea7b07891"
 
 SRC_URI = "git://github.com/muldjord/occurity.git;branch=master;protocol=https"
-PV = "1.2.2+git${SRCPV}"
-SRCREV = "9fb7938aaba70c8933c8a7978e2ebfe28d5f6bff"
+PV = "1.2.3+git${SRCPV}"
+SRCREV = "b84cc386e91b3b1f767b0022c14c8fd8d9dcfb8c"
 
 DEPENDS += " bash qtbase qtmultimedia qtsvg gstreamer1.0-libav"
 RDEPENDS:${PN} += " bash"

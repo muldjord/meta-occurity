@@ -14,9 +14,11 @@ else
     KEYBOARD_APPLET="keyboard"
 fi
 
-xset -dpms     # Disable DPMS (Energy Star) features
-xset s off     # Disable screensaver
-xset s noblank # Don't blank video device
+# Disable all DPMS standby / suspend / sleep modes by setting timings to 0.
+# Disabling DPMS entirely does NOT work as Occurity uses DPMS to turn the monitor off and thereby enables DPMS again.
+xset dpms 0 0 0
+# Disable screensaver
+xset s off
 
 matchbox-desktop &
 

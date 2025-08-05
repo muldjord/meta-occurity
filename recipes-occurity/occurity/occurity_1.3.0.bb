@@ -3,11 +3,11 @@ DESCRIPTION = "Recipe for building and installing the Occurity visual acuity sof
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec6d293b95dea7b07891"
 
-SRC_URI = "git://github.com/muldjord/occurity.git;branch=master;protocol=https"
-PV = "1.2.5+git${SRCPV}"
-SRCREV = "e2126874cdce018e44e28751bb8d6b356ce7cbc9"
+SRC_URI = "git://github.com/muldjord/occurity.git;branch=qt6;protocol=https"
+PV = "1.3.0+git${SRCPV}"
+SRCREV = "0eee4b4404f7c84736aea80edd5d4d4b7b347b8e"
 
-DEPENDS += " bash qtbase qtmultimedia qtsvg gstreamer1.0-libav"
+DEPENDS += " bash qtbase qtmultimedia qtsvg ffmpeg"
 RDEPENDS:${PN} += " bash"
 
 S = "${WORKDIR}/git"
@@ -32,6 +32,3 @@ do_install:append() {
 }
 
 FILES:${PN} += "/home/root/occurity/"
-
-# Inherit the qmake5 class to build the application
-inherit qmake5

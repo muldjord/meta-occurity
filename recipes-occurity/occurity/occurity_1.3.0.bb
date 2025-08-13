@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec
 
 SRC_URI = "git://github.com/muldjord/occurity.git;branch=qt6;protocol=https"
 PV = "1.3.0+git${SRCPV}"
-SRCREV = "0eee4b4404f7c84736aea80edd5d4d4b7b347b8e"
+SRCREV = "60c198d1375165dd1eb760dc75881c77a2742bb0"
 
 DEPENDS += " bash qtbase qtmultimedia qtsvg ffmpeg"
 RDEPENDS:${PN} += " bash"
@@ -15,13 +15,12 @@ S = "${WORKDIR}/git"
 do_install:append() {
   # Install the application
   install -d ${D}/home/root/occurity/
-  install -m 0755 Occurity ${D}/home/root/occurity/
+  install -m 0755 release/Occurity ${D}/home/root/occurity/
   install -m 0664 ${S}/AUTHORS ${D}/home/root/occurity/
   install -m 0664 ${S}/charts.xml.example ${D}/home/root/occurity/
   install -m 0664 ${S}/LICENSE ${D}/home/root/occurity/
   install -m 0664 ${S}/occurity_da_DK.qm ${D}/home/root/occurity/
   install -m 0664 ${S}/README.md ${D}/home/root/occurity/
-  install -m 0664 ${S}/VERSION ${D}/home/root/occurity/
   cp -R ${S}/optotypes ${D}/home/root/occurity/
   cp -R ${S}/docs ${D}/home/root/occurity/
   cp -R ${S}/flirc_configs ${D}/home/root/occurity/

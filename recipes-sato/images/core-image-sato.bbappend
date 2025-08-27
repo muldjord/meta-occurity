@@ -1,5 +1,5 @@
 SUMMARY = "Adjusts Matchbox configuration and adds Occurity package"
-DESCRIPTION = "Adjusts the Sato and Matchbox configuration, set Occurity to autostart and adds the Occurity package"
+DESCRIPTION = "Adjusts the Sato and Matchbox configuration, set Occurity to autostart and adds the Occurity package."
 LICENSE = "MIT"
 
 IMAGE_INSTALL:append = " occurity nano"

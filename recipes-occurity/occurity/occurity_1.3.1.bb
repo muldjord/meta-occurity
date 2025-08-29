@@ -3,7 +3,7 @@ DESCRIPTION = "Recipe for building and installing the Occurity visual acuity sof
 LICENSE = "GPL-3.0-only"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec6d293b95dea7b07891"
 
-SRC_URI = "git://github.com/muldjord/occurity.git;branch=qt6;protocol=https"
+SRC_URI = "git://github.com/muldjord/occurity.git;branch=master;protocol=https"
 PV = "1.3.1+git${SRCPV}"
 SRCREV = "dc2a7e3745f88186871e7b5b8a7c996ec844aa31"
 

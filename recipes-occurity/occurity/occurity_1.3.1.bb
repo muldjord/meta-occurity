@@ -23,7 +23,7 @@ S = "${WORKDIR}/git"
 do_install:append() {
     # Install the application
     install -d ${D}/home/root/occurity/
-    install -m 0755 ${S}/release/Occurity ${D}/home/root/occurity/
+    install -m 0755 ${S}/../build/Occurity ${D}/home/root/occurity/
     install -m 0664 ${S}/AUTHORS ${D}/home/root/occurity/
     install -m 0664 ${S}/charts.xml.example ${D}/home/root/occurity/
     install -m 0664 ${S}/LICENSE ${D}/home/root/occurity/

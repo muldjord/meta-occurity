@@ -14,13 +14,12 @@ RDEPENDS:${PN} += " bash"
 inherit qt6-cmake
 
 EXTRA_OECMAKE = "\
-    -DCMAKE_PREFIX_PATH=${STAGING_DIR_TARGET}${prefix} \
     -DCMAKE_BUILD_TYPE=Release \
 "
 
 S = "${WORKDIR}/git"
 
-do_install:append() {
+do_install() {
     # Install the application
     install -d ${D}/home/root/occurity/
     install -m 0755 ${S}/../build/Occurity ${D}/home/root/occurity/
@@ -42,4 +41,4 @@ do_install:append() {
     echo 'export QT_MEDIA_BACKEND=ffmpeg' > ${D}${sysconfdir}/profile.d/qt-media-backend.sh
 }
 
-FILES:${PN} += "/home/root/occurity/"
+FILES:${PN} += "/home/root/occurity"

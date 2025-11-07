@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-3.0-only;md5=c79ff39f19dfec
 
 SRC_URI = "git://github.com/muldjord/occurity.git;branch=master;protocol=https"
 PV = "1.3.1+git${SRCPV}"
-SRCREV = "0747dd3b81f14e27d1d524cc0fd695946db6ded6"
+SRCREV = "5202a8a8365791de316db1a349a318b9230b6c24"
 
 DEPENDS:append = " qtbase qtmultimedia qtsvg qttools-native"
 
